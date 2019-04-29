@@ -1,0 +1,54 @@
+@import '../../styles.scss';
+
+// DESKTOP
+@media (min-width: 850px) {
+  :host {
+    width: unset;
+    background-color: $primary-background;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    // align-items: center;
+    // grid-gap: 3rem;
+
+    padding: 10rem;
+  }
+}
+
+// MOBILE
+@media (min-width: 320px) and (max-width: 850px) {
+  :host {
+    width: unset;
+    background-color: $primary-background;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // align-items: center;
+    // grid-gap: 3rem;
+
+    padding: 10px;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 36pt;
+}
+
+.logo {
+  width: 90vw;
+  max-width: 800px;
+  align-self: center;
+}
+
+.points {
+  margin-left: 1rem;
+  word-wrap: break-word;
+}

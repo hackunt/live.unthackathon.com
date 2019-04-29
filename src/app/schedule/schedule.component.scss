@@ -1,0 +1,44 @@
+@import '../../styles.scss';
+
+.mat-cell, .mat-header-cell {
+  font-family: 'Offside';
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+}
+
+// DESKTOP
+@media (min-width: 850px) {
+  :host {
+    background-color: $primary-background;
+    color: white;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+
+    padding: 3rem;
+  }
+}
+
+// MOBILE
+@media (min-width: 320px) and (max-width: 850px) {
+  :host {
+    background-color: $primary-background;
+    color: white;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+
+    padding: 10px;
+  }
+}

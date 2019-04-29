@@ -1,0 +1,52 @@
+@import '../../styles.scss';
+
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+// DESKTOP
+@media (min-width: 850px) {
+  :host {
+    width: unset;
+    background-color: black;
+    color: black;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    align-items: center;
+    grid-gap: 3rem;
+
+    padding: 3rem;
+  }
+}
+
+// MOBILE
+@media (min-width: 320px) and (max-width: 850px) {
+  :host {
+    width: unset;
+    background-color: black;
+    color: black;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    grid-gap: 3rem;
+
+    padding: 10px;
+  }
+}
+
+// #parking {
+//   background-image: url('../../assets/parking.png');
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: contain;
+// }
+
+.loc-item {
+  // min-width: 500px;
+  // max-width: 50vw;
+  // min-height: 500px;
+  // max-height: 60vh;
+}

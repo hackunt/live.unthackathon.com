@@ -1,0 +1,29 @@
+// DESKTOP
+@media (min-width: 850px) {
+  :host {
+    background-color: black;
+    color: white;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+
+    padding: 3rem;
+  }
+}
+
+// MOBILE
+@media (min-width: 320px) and (max-width: 850px) {
+  :host {
+    background-color: black;
+    color: white;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+
+    padding: 10px;
+  }
+}

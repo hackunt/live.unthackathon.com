@@ -1,0 +1,36 @@
+@import '../../styles.scss';
+
+// DESKTOP
+@media (min-width: 850px) {
+  #drawer-button {
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 850px) {
+  .toolbar-link {
+    display: none;
+  }
+}
+
+#toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: $primary-foreground;
+}
+
+#logo {
+  height: 50%;
+}
+
+.logo-container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.logo-container:hover {
+  background: darken($primary-foreground, 2%);
+}

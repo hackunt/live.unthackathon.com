@@ -1,0 +1,8 @@
+@import '../../styles.scss';
+
+:host {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(calc(100vh - 64px), auto);
+}
+
